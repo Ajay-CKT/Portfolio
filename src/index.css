@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night: #121517;
+  --color-primary: #f3f3f6;
+  --color-secondary: #f05b2d;
+  --font-primary: "Merriweather";
+  --font-secondary: "Poppins";
+  --font-optional: "Clicker Script";
+}
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 2px var(--color-secondary);
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+    border-radius: 10px;
+  }
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
