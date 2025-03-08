@@ -8,6 +8,7 @@ import linkedIn from "./assets/linkedIn.png";
 import phone from "./assets/phone.png";
 import medium from "./assets/medium.png";
 import github from "./assets/github.png";
+import Experience from "./components/Experience";
 
 const Portfolio: FC = () => {
   const currentYear: number = new Date().getFullYear();
@@ -115,6 +116,12 @@ const Portfolio: FC = () => {
             :
           </p>
           <Skills />
+        </section>
+        <section className="px-4 space-y-2" id="experience">
+          <h2 className="font-secondary text-xl text-gray-300 px-2 py-1 border border-primary max-w-fit rounded-md hover:text-secondary cursor-pointer hover:scale-120 transition-transform">
+            Experience
+          </h2>
+          <Experience />
         </section>
         <section className="px-4 space-y-2" id="education">
           <h2 className="font-secondary text-xl text-gray-300 px-2 py-1 border border-primary max-w-fit rounded-md hover:text-secondary cursor-pointer hover:scale-120 transition-transform">
